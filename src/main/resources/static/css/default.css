@@ -1,0 +1,48 @@
+html {
+    background-color: mediumblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    width: 75%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.head-div {
+    border: 5px solid midnightblue;
+    border-radius: 15px;
+    background-color: darkblue;
+}
+.body-div {
+    border: 10px solid midnightblue;
+    border-radius: 25px;
+    background-color: darkblue;
+    color: white;
+}
+.message-div {
+    background-color: midnightblue;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 30% 5% 25%;
+}
+.formMenu {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    vertical-align: middle;
+    border: 5px solid midnightblue;
+    border-radius: 35px;
+    background-color: midnightblue;
+    color: white;
+    text-align: center;
+}
+input {
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+}
+.author-span {
+    margin-left: 10%;
+}
+.message-span {
+    margin-left: 20%;
+}

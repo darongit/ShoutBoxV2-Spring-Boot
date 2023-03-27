@@ -1,0 +1,2 @@
+# crudMessageTemplate
+Simple project template

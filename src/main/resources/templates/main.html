@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShoutBox v2</title>
+    <link th:href="@{/css/default.css}" rel="stylesheet">
+    <script type="text/javascript" th:src="@{/js/default.js}"></script>
+</head>
+<body onload="start()">
+<div class="head-div" id="message-form">
+    <form class="formMenu" name="formMenu">
+        <label for="author">Your name:</label>
+        <input id="author" name="author" th:value="*{author}" onkeydown="authorEnter()" required/>
+        <br>
+        <label for="message" style="text-align: center;">Message:</label>
+        <input id="message" name="message" value="" onkeydown="search()" />
+        <br>
+        <button type="button" onclick="send()">Send message!</button>
+    </form>
+</div>
+
+<div class="body-div">
+    <div class="message-div" th:each="message : ${messages}">
+
+        <br>
+        <span class="author-span">
+            <span th:text="${message.getAuthor()}"></span>    <em style="font-size: 0.85em;">~<span th:text="${message.getTimeSincePublished()}"></span></em>
+        </span>
+        <br>
+        <span class="message-span">
+            <span th:text="${message.getContent()}"></span>
+        </span>
+        <br><br>
+    </div>
+</div>
+</body>
+</html>
